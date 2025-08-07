@@ -1,18 +1,26 @@
 ### Dates ###
 
 from datetime import datetime 
+from datetime import time 
+
+def PrintDate(date):
+    print(date)
+    print(date.year)
+    print(date.month)
+    print(date.day)
+    print(date.hour)
+    print(date.minute)
+    print(date.second)
+    print(date.timestamp())
 
 now = datetime.now()
 
 
-print(now.year)
-print(now.month)
-print(now.day)
-print(now.hour)
-print(now.minute)
-print(now.second)
+PrintDate(now)
 
-timestamp = now.timestamp()
+year_2026 = datetime(2026, 1, 1)
 
+print(year_2026)
 
-print(timestamp)
+current_time = time()
+
